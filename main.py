@@ -11,6 +11,7 @@ def alignTable(instanceData, width):
 
 def classify(distanceList, k):
     nearestK_Neighbours = distanceList[:k]
+
     yes = 0
     no = 0
     for neighbour in nearestK_Neighbours:
@@ -82,7 +83,7 @@ def printData(data):  # Print the data in tabular format
 
 
 def prepareData():
-    with open('PlayTennisData.json', 'r') as json_file:  # Load the dataset from the JSON file
+    with open('PlayTennisData.json', 'r') as json_file:
         data = json.load(json_file)
     printData(data)
     yes = 0
