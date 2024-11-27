@@ -60,7 +60,6 @@ def evaluate(prediction):  # instance[0] = PREDICTED, instance[1] = ACTUAL
     print("--------------------------------------------------------------------------------")
 
 
-
 def test(data, dataEncoded):
     prediction3K = []
     prediction5K = []
